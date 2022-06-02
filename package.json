@@ -10,9 +10,11 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "prop-types": "15.8.1",
     "react": "18.0.0-alpha-ed6c091fe-20210701",
     "react-dom": "18.0.0-alpha-ed6c091fe-20210701",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "redux": "4.2.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
