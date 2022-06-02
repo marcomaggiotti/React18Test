@@ -1,13 +1,25 @@
-import { createRoot } from "react-dom";
-import { App } from "./_app";
-import { createStore } from "redux";
-import Counter from "./components/Counter";
-import counter from "./reducers";
-//import HomePage from "components/Home/HomePage";
+import React from "react";
+import { render } from "react-dom";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import { createLogger } from "redux-logger";
+import thunk from "redux-thunk";
+import reducer from "./reducers";
+import { getAllProducts } from "./actions";
+import App from "./containers/App";
 
-const store = createStore(counter);
-const root = createRoot(document.getElementById("root")).render(<App />);
+const middleware = [thunk];
+if (process.env.NODE_ENV !== "production") {
+  middleware.push(createLogger());
+}
 
-// Initial render: Render an element to the root.
-//root.render(<HomePage />);
-//root.render(<App tab="home" />);
+const store = createStore(reducer, applyMiddleware(...middleware));
+
+//store.dispatch(getAllProducts())
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
