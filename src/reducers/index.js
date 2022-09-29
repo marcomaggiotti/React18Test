@@ -2,7 +2,8 @@ import { combineReducers } from "redux";
 import cart, * as fromCart from "./cart";
 import products, * as fromProducts from "./products";
 
-/*export default (state = 0, action) => {
+/*
+export default (state = 0, action) => {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
@@ -11,7 +12,8 @@ import products, * as fromProducts from "./products";
     default:
       return state;
   }
-};*/
+};
+*/
 
 export default combineReducers({
   cart,

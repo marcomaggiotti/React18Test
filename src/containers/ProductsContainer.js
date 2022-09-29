@@ -5,6 +5,20 @@ import { addToCart } from "../actions";
 import { getVisibleProducts } from "../reducers/products";
 import ProductItem from "../components/ProductItem";
 import ProductsList from "../components/ProductsList";
+import { Subject } from "rxjs";
+import { of } from "rxjs";
+
+const source = ["Adam", "Brian", "Christine"];
+const names$ = of(source);
+const notificationSubject = new Subject();
+
+// Subject is also an Observable
+const notificationObservable = notificationSubject.asObservable();
+
+const publishNotification = (value) => {
+  // multicasts a value onto the stream
+  notificationSubject.next(value);
+};
 
 const ProductsContainer = ({ products, addToCart }) => (
   <ProductsList title="Products">
@@ -34,4 +48,8 @@ const mapStateToProps = (state) => ({
   products: getVisibleProducts(state.products)
 });
 
-export default connect(mapStateToProps, { addToCart })(ProductsContainer);
+export default connect(mapStateToProps, {
+  addToCart,
+  notificationObservable,
+  publishNotification
+})(ProductsContainer);

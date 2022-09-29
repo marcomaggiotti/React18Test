@@ -26,6 +26,7 @@ function Layout() {
     </>
   );
 }
+
 const App = () => (
   <div>
     <h2>Shopping Cart Example</h2>
@@ -34,7 +35,7 @@ const App = () => (
       id="uncontrolled-tab-example"
       className="mb-3"
     >
-      <Tab eventKey="home" title="Electronics">
+      <Tab eventKey="home" title="Tables">
         <ProductsContainer />
         <hr />
       </Tab>
