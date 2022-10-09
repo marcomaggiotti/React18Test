@@ -1,0 +1,33 @@
+.square_free {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.circle_free {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.square_busy {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.circle_busy {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.text {
+  margin: auto;
+}

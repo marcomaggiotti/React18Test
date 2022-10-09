@@ -21,7 +21,8 @@
     "redux": "4.2.0",
     "redux-logger": "3.0.6",
     "redux-thunk": "2.4.1",
-    "rxjs": "7.5.7"
+    "rxjs": "7.5.7",
+    "typescript": "4.8.4"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
