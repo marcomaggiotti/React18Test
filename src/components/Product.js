@@ -1,16 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Offcanvas,
-  Form,
-  FormControl,
-  Button
-} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./Product.css";
 
 const numbers = [1, 2, 3, 4, 5];
