@@ -10,8 +10,8 @@ import thunk from "redux-thunk";
 import reducer from "./reducers";
 import { getAllProducts } from "./actions";
 import App from "./containers/App";
-import { logUser, user, myUnchangingUser } from "./models/User";
-import DemoUser from "./models/User";
+//import { logUser, user, myUnchangingUser } from "./models/User";
+//import DemoUser from "./models/User";
 
 //const root = ReactDOM.createRoot(document.getElementById("root"));
 // cant put document.getElementById("root") without createRoot
@@ -34,9 +34,9 @@ const point = { x: 12, y: 26 };
 logPoint(point);
 
 const user1 = { id: 14, name: 42 };
-logUser(user1);
+//logUser(user1);
 
-logUser(user);
+//logUser(user);
 //console.log(user);
 
 let helloWorld = "This is a variable in Typescript Ma ciao";
