@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { checkout } from "../actions";
 import { getTotal, getCartProducts } from "../reducers";
 import Cart from "../components/Cart";
+//git test
 
 const CartContainer = ({ products, total, checkout }) => (
   <Cart
