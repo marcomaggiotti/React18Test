@@ -10,9 +10,13 @@ import thunk from "redux-thunk";
 import reducer from "./reducers";
 import { getAllProducts } from "./actions";
 import App from "./containers/App";
-import { logUser, user, myUnchangingUser } from "./models/User";
-import DemoUser from "./models/User";
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports';
 
+Amplify.configure(awsExports);
+
+//import { logUser, user, myUnchangingUser } from "./models/User";
+//import DemoUser from "./models/User";
 //const root = ReactDOM.createRoot(document.getElementById("root"));
 // cant put document.getElementById("root") without createRoot
 // it produce an error in the cart.js and say that objects aren't
@@ -53,7 +57,6 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const store = createStore(reducer, applyMiddleware(...middleware));
-
 store.dispatch(getAllProducts());
 
 render(
