@@ -13,7 +13,6 @@ import App from "./containers/App";
 import { Amplify, API, graphqlOperation } from 'aws-amplify'
 import { createTodo } from './graphql/mutations'
 import { listTodos } from './graphql/queries'
-import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
 
 //import { logUser, user, myUnchangingUser } from "./models/User";
