@@ -11,5 +11,32 @@
       "StackId": "arn:aws:cloudformation:us-east-1:564583667916:stack/amplify-react18test-dev-03258/9f45f6b0-8a2c-11ed-8c63-0ad6dd7a425d",
       "AmplifyAppId": "d29pw0hpoqexto"
     }
+  },
+  "api": {
+    "react18test": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "cnydlb4rhzefpn37mwd536gxva",
+        "GraphQLAPIEndpointOutput": "https://gizcjwzhkzg75oziy4ec7f2n3i.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-rxmrq4wtafepzmgd57gph3rble"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-react18test-dev-03258-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apireact18test"
+      },
+      "lastPushTimeStamp": "2023-01-02T01:10:05.853Z",
+      "lastPushDirHash": "7El0dx/U0uLoLDjMKczqpC+LeOk="
+    }
   }
 }

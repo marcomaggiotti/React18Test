@@ -10,6 +10,11 @@
       "StackName": "amplify-react18test-dev-03258",
       "StackId": "arn:aws:cloudformation:us-east-1:564583667916:stack/amplify-react18test-dev-03258/9f45f6b0-8a2c-11ed-8c63-0ad6dd7a425d",
       "AmplifyAppId": "d29pw0hpoqexto"
+    },
+    "categories": {
+      "api": {
+        "react18test": {}
+      }
     }
   }
 }
