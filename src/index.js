@@ -12,7 +12,7 @@ import { getAllProducts } from "./actions";
 import App from "./containers/App";
 
 import { Amplify } from 'aws-amplify';
-import awsExports from './aws-exports';
+//import awsExports from './aws-exports';
 
 //import { logUser, user, myUnchangingUser } from "./models/User";
 //import DemoUser from "./models/User";
