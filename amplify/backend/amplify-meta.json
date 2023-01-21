@@ -22,7 +22,9 @@
           "defaultAuthentication": {
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
+              "apiKeyExpirationDays": 7,
+              "apiKeyExpirationDate": "2023-01-28T18:41:37.932Z",
+              "description": "todo"
             }
           },
           "additionalAuthenticationProviders": []
@@ -31,12 +33,51 @@
         "GraphQLAPIEndpointOutput": "https://gizcjwzhkzg75oziy4ec7f2n3i.appsync-api.us-east-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-rxmrq4wtafepzmgd57gph3rble"
       },
+      "lastPushTimeStamp": "2023-01-21T18:41:41.763Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-react18test-dev-03258-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apireact18test"
+      }
+    }
+  },
+  "auth": {
+    "react18test3ff671c1": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
       },
-      "lastPushTimeStamp": "2023-01-02T01:10:05.853Z",
-      "lastPushDirHash": "7El0dx/U0uLoLDjMKczqpC+LeOk="
+      "output": {
+        "UserPoolId": "us-east-1_AyTWRP9kU",
+        "AppClientIDWeb": "6u8lfd554oed3naua0v6ces5m7",
+        "AppClientID": "6nmd5dnaemkel1q00nv67aqbs5",
+        "IdentityPoolId": "us-east-1:a9d2c40a-3df2-489b-bf10-64f6958c5e0c",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:564583667916:userpool/us-east-1_AyTWRP9kU",
+        "IdentityPoolName": "react18test3ff671c1_identitypool_3ff671c1__dev",
+        "UserPoolName": "react18test3ff671c1_userpool_3ff671c1"
+      },
+      "lastPushTimeStamp": "2023-01-21T18:33:34.736Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-react18test-dev-03258-deployment/amplify-cfn-templates/auth/react18test3ff671c1-cloudformation-template.json",
+        "logicalId": "authreact18test3ff671c1"
+      }
     }
   }
 }

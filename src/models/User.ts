@@ -31,16 +31,3 @@ class DemoUser implements User {
     return this._name;
   }
 }
-
-// logs "12, 26"
-export const user = { id: 12, name: "Maria" };
-
-export const myUnchangingUser = {
-  name: "Anonymous"
-} as const;
-
-export function logUser(u: User) {
-  console.log(`${u.id}, ${u.name}`);
-}
-
-//logUser(user);
